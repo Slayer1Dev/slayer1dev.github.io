@@ -1,42 +1,33 @@
-# slayer1dev.github.io
+# Lucas Barbosa — Portfólio
 
-Portfólio pessoal — [slayer1dev.github.io](https://slayer1dev.github.io)
+Analista de ecommerce e desenvolvedor. Portfólio com narrativa por rolagem, escultura WebGL e uma demonstração ilustrativa do agent-board em oito capítulos.
 
-Página única, sem framework e sem build: HTML e CSS escritos à mão, servidos direto pelo GitHub Pages.
+## Site
 
-## Decisões de design
+Endereço após ativar GitHub Pages: https://slayer1dev.github.io/
 
-- **Tema escuro travado**, base off-black com um único accent âmbar. Sem gradiente roxo, sem hero centralizado sobre mesh — os dois clichês mais reconhecíveis de portfólio gerado por IA.
-- **Monoespaçada como material de design**, não como decoração. O assunto da página é infraestrutura, então a tipografia utilitária carrega significado.
-- **Elemento de assinatura:** um painel que apresenta os sistemas como serviços em execução, com sequência de inicialização animada.
-- **Movimento justificado.** A animação de boot comunica inicialização; os indicadores pulsando comunicam estado ativo. Nada anima só por animar, e tudo respeita `prefers-reduced-motion`.
+Arquivos estáticos servidos diretamente, sem dependências ou serviços externos para os efeitos. Fontes incluídas em assets/ com suas licenças.
 
-## Acessibilidade
+## Desenvolvimento
 
-Verificado com medição, não no olho:
+Sirva a pasta com um servidor HTTP local, por exemplo python -m http.server 4178, e abra http://localhost:4178/.
 
-| Par | Contraste | Mínimo AA |
-|---|---|---|
-| Texto principal / fundo | 15.60:1 | 4.5:1 |
-| Texto secundário / fundo | 6.90:1 | 4.5:1 |
-| Accent / fundo | 8.99:1 | 4.5:1 |
-| Texto do botão / accent | 8.77:1 | 4.5:1 |
+- index.html: conteúdo e composição.
+- style.css: identidade visual e adaptação de telas.
+- sculpture.js: escultura procedural WebGL, com alternativa CSS.
+- showcase.js: quadros, sessões, conexões, escrita e movimentos da tarefa.
+- app.js: narrativa, navegação, movimento reduzido e fichas dos projetos.
 
-Também: sem scroll horizontal de 375px a 1440px, nenhum alvo de toque abaixo de 44px, foco visível por teclado em todos os elementos interativos, e link de pular para o conteúdo.
+## Publicação
 
-## Rodando local
+Settings → Pages → Deploy from a branch → main → /(root). O arquivo .nojekyll mantém os arquivos estáticos sem processamento Jekyll. Atualizações na branch main atualizam a página automaticamente.
 
-```bash
-python3 -m http.server 4321
-```
+## Demonstração
 
-## Estrutura
+Os quadros, sessões e tarefas mostrados são ilustrativos. O site não acessa contas, APIs ou dados privados. O motion respeita a preferência do sistema e oferece controle manual; os capítulos do agent-board também podem ser escolhidos pelos botões.
 
-```
-index.html    markup e conteúdo
-style.css     tokens, layout e movimento
-```
+## Projetos públicos
 
-## Licença
-
-[MIT](LICENSE)
+- https://github.com/Slayer1Dev/agent-board
+- https://github.com/Slayer1Dev/arquivo-seguro
+- https://github.com/Slayer1Dev/claude-skills
