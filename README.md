@@ -1,33 +1,47 @@
 # Lucas Barbosa — Portfólio
 
-Analista de ecommerce e desenvolvedor. Portfólio com narrativa por rolagem, escultura WebGL e uma demonstração ilustrativa do agent-board em oito capítulos.
+Sou analista de ecommerce e desenvolvedor. Construo sistemas para conectar marketplaces, organizar operações e transformar processos em ferramentas.
 
-## Site
+**[Acesse meu portfólio →](https://slayer1dev.github.io/)**
 
-Endereço após ativar GitHub Pages: https://slayer1dev.github.io/
+## Sobre o projeto
 
-Arquivos estáticos servidos diretamente, sem dependências ou serviços externos para os efeitos. Fontes incluídas em assets/ com suas licenças.
+Meu portfólio apresenta minha experiência e meus projetos públicos em uma narrativa por rolagem. A identidade visual combina grafite, verde ácido, tipografia condensada e uma escultura procedural em WebGL.
 
-## Desenvolvimento
-
-Sirva a pasta com um servidor HTTP local, por exemplo python -m http.server 4178, e abra http://localhost:4178/.
-
-- index.html: conteúdo e composição.
-- style.css: identidade visual e adaptação de telas.
-- sculpture.js: escultura procedural WebGL, com alternativa CSS.
-- showcase.js: quadros, sessões, conexões, escrita e movimentos da tarefa.
-- app.js: narrativa, navegação, movimento reduzido e fichas dos projetos.
-
-## Publicação
-
-Settings → Pages → Deploy from a branch → main → /(root). O arquivo .nojekyll mantém os arquivos estáticos sem processamento Jekyll. Atualizações na branch main atualizam a página automaticamente.
-
-## Demonstração
-
-Os quadros, sessões e tarefas mostrados são ilustrativos. O site não acessa contas, APIs ou dados privados. O motion respeita a preferência do sistema e oferece controle manual; os capítulos do agent-board também podem ser escolhidos pelos botões.
+O agent-board é o projeto em destaque. A demonstração percorre oito capítulos: quadros independentes, seleção de projeto, sessões de IA, compartilhamento de contexto, criação de tarefa, continuidade entre sessões, execução e conclusão.
 
 ## Projetos públicos
 
-- https://github.com/Slayer1Dev/agent-board
-- https://github.com/Slayer1Dev/arquivo-seguro
-- https://github.com/Slayer1Dev/claude-skills
+- **[agent-board](https://github.com/Slayer1Dev/agent-board)** — quadro compartilhado por pessoas e agentes de IA, com MCP, API REST, CLI e histórico com autoria.
+- **[Arquivo Seguro](https://github.com/Slayer1Dev/arquivo-seguro)** — extensão de navegador que alerta sobre extensões disfarçadas em downloads e anexos.
+- **[claude-skills](https://github.com/Slayer1Dev/claude-skills)** — instruções reutilizáveis para organizar o trabalho com agentes de IA.
+
+## Desenvolvimento
+
+HTML, CSS e JavaScript, sem framework ou instalação de dependências. As fontes ficam em `assets/`, acompanhadas das licenças.
+
+Servidor local:
+
+```sh
+python -m http.server 4178
+```
+
+Endereço local: `http://localhost:4178/`.
+
+| Arquivo | Função |
+| --- | --- |
+| `index.html` | Conteúdo e composição |
+| `style.css` | Identidade visual e adaptação de telas |
+| `sculpture.js` | Escultura WebGL e alternativa CSS |
+| `showcase.js` | Narrativa visual do agent-board |
+| `app.js` | Navegação, capítulos e fichas dos projetos |
+
+## Motion e acessibilidade
+
+Rolagem nativa, layout responsivo e controles para escolher os capítulos. O movimento respeita a preferência do sistema e pode ser reduzido manualmente.
+
+Os quadros, sessões e tarefas da demonstração são ilustrativos. O site não se conecta a contas, agentes ou dados privados.
+
+## Hospedagem
+
+Publicado no GitHub Pages. Atualizações na branch `main` atualizam o site automaticamente. O arquivo `.nojekyll` mantém os arquivos estáticos sem processamento Jekyll.
